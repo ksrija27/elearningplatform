@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      .course-container {
+        max-width: 1000px;
+        margin: 30px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      .course-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+
+      .course-header img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .course-header h2 {
+        color: #4a00e0;
+        margin: 0;
+      }
+
+      .video-container {
+        position: relative;
+        padding-top: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      .topics-section {
+        margin: 20px 0;
+      }
+
+      .topics-section ul {
+        list-style: disc;
+        padding-left: 20px;
+      }
+
+      .course-actions {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .course-actions button,
+      .course-actions a {
+        padding: 10px 20px;
+        border: none;
+        background-color: #4a00e0;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .course-actions button:hover,
+      .course-actions a:hover {
+        background-color: #3600b5;
+      }
+
+      .progress-bar {
+        margin-top: 20px;
+        width: 100%;
+      }
+
+      progress {
+        width: 100%;
+        height: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="course-container">
+      <div class="course-header">
+        <h2 id="courseTitle">Course Title</h2>
+        <div>
+          <span id="studentName">Student</span>
+          <img
+            id="userPic"
+            src="https://via.placeholder.com/40"
+            alt="Profile"
+          />
+        </div>
+      </div>
+
+      <div class="video-container">
+        <iframe id="videoFrame" src="" allowfullscreen></iframe>
+      </div>
+
+      <div class="topics-section">
+        <h3>What You Will Learn</h3>
+        <ul id="topicsList"></ul>
+      </div>
+
+      <div class="course-actions">
+        <a id="pdfLink" href="#" target="_blank">Read More</a>
+        <button onclick="increaseProgress()">Mark Progress +20%</button>
+        <button onclick="checkCertificate()">Get Certificate</button>
+        <button onclick="logout()">Logout</button>
+      </div>
+
+      <div class="progress-bar">
+        <label>Progress</label>
+        <progress id="courseProgress" value="0" max="100"></progress>
+      </div>
+    </div>
+
+    <script src="js/course.js"></script>
+  </body>
+</html>

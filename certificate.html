@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificate</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="certificate" class="certificate animate-fade">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Logo_OpenAI.svg"
+        width="100"
+        alt="Logo"
+      />
+      <h1>Certificate of Completion</h1>
+      <h2>This is to certify that</h2>
+      <h2 id="certName"></h2>
+      <h3>has successfully completed the course</h3>
+      <h2 id="certCourse"></h2>
+      <p>Issued on <span id="issueDate"></span></p>
+      <div class="signature">Instructor Signature</div>
+      <br />
+      <button class="btn" onclick="downloadCertificate()">Download PDF</button>
+      <button class="btn" onclick="goHome()">Back to Home</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="js/certificate.js"></script>
+  </body>
+</html>

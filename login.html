@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | CodTech Learn</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h2 class="brand">Login to CodTech Learn</h2>
+      <form class="login-form" onsubmit="handleLogin(event)">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+
+        <label for="image">Profile Picture (optional)</label>
+        <input type="file" id="image" accept="image/*" />
+
+        <button class="btn" type="submit">Login</button>
+        <p style="margin-top: 10px">
+  
+        </p>
+      </form>
+    </div>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>

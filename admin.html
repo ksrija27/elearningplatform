@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      .admin-panel {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 30px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .admin-panel h2 {
+        text-align: center;
+        color: #4a00e0;
+        margin-bottom: 30px;
+      }
+
+      .user-list {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .user-list th,
+      .user-list td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .user-list th {
+        background-color: #f3f3f3;
+        color: #4a00e0;
+      }
+
+      .user-list td img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="admin-panel animate-fade">
+      <h2>Admin Panel - User Progress</h2>
+      <table class="user-list" id="userTable">
+        <thead>
+          <tr>
+            <th>Profile</th>
+            <th>Name</th>
+            <th>Completed Course</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- User rows will be inserted here by JS -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="js/admin.js"></script>
+  </body>
+</html>
