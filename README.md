@@ -26,19 +26,29 @@ A modern, fully responsive **E-Learning Platform** built with **HTML, CSS, and J
 ##  Project Structure
 project-root/
 ├── index.html # Home with course cards
-├── login.html # User login
+
+├── login.html # User login 
+
 ├── course.html # Course detail page
+
 ├── certificate.html # Downloadable certificate
+
 ├── admin.html # Admin panel
 │
 ├── css/
+
 │ └── styles.css # All global + responsive styles
 │
 ├── js/
+
 │ ├── main.js # Course list and homepage logic
+
 │ ├── login.js # User login and localStorage
+
 │ ├── course.js # Progress, video, and actions
+
 │ └── certificate.js # Dynamic certificate and PDF generation
+
 |  |___ admin.js 
 │
 ├── images/ # Course thumbnails (e.g., python.png, html.png, etc.)
