@@ -82,23 +82,15 @@ project-root/
 
 ---
 
-##  Screenshots (Add These After Hosting)
+## OUTPUT
 
-> Add screenshots here in your repo:
-- Homepage with courses
-- Login page
-- Course detail view
-- Certificate page
-- Admin dashboard
+![Image](https://github.com/user-attachments/assets/18306431-61bd-466a-ae7a-46ac60c81426)
 
----
+## LIVE DEMO
+https://ksrija27.github.io/elearningplatform/
  
 
-## ✅ How to Run
 
-> Just open `index.html` in your browser (after logging in from `login.html`)
-
----
 
 
 
